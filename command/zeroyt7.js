@@ -1257,7 +1257,7 @@ case 'play': case 'ytplay': {
             }
             break
 case 'audioyt': case 'ytaudio': {
-                let { ytaa } = require('./lib/y2mate')
+                let { ytaa } = require('../lib/y2mate')
                 if (!text) throw `Example : ${prefix + command} https://youtube.com/watch?v=PtFMh6Tccag%27 128kbps`
                 let quality = args[1] ? args[1] : '128kbps'
                 let media = await yta(text, quality)
@@ -1266,7 +1266,7 @@ case 'audioyt': case 'ytaudio': {
             }
             break
             case 'videoyt': case 'ytvideo': {
-                let { ytvv } = require('./lib/y2mate')
+                let { ytvv } = require('../lib/y2mate')
                 if (!text) throw `Example : ${prefix + command} https://youtube.com/watch?v=PtFMh6Tccag%27 360p`
                 let quality = args[1] ? args[1] : '360p'
                 let media = await ytv(text, quality)
