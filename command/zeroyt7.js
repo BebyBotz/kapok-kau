@@ -44,7 +44,6 @@ var request = require('request')
 var speed = require('performance-now')
 var { performance } = require('perf_hooks')
 var { Primbon } = require('scrape-primbon')
-var brainly = require('brainly-scraper')
 var primbon = new Primbon()
 var { scdl } = require('../lib/scdl')
 var { sfiledl } = require ('../lib/solidfile')
@@ -280,7 +279,6 @@ txt =`╭─⬣ *Group Menu* 🏢
 
 ╭─⬣ *Search Menu* 🔍
 │${simbol} ${prefix}ytsearch
-│${simbol} ${prefix}brainly
 │${simbol} ${prefix}google
 │${simbol} ${prefix}gimage
 │${simbol} ${prefix}pinterest
@@ -608,17 +606,6 @@ teks3 += `${i.developer}`
 m.reply(teks3)
 })
 break
-case 'brainly':
-					if (!q) return m.reply('Pertanyaan apa')
-		          	brien = args.join(' ')
-					brainly(`${brien}`).then(res => {
-					teks2 = '\n'
-					for (let Y of res.data) {
-					teks2 += `\n* _BRAINLY_ *\n\n* Pertanyaan:* ${Y.pertanyaan}\n\n* Jawaban:* ${Y.jawaban[0].text}\n\n`
-					}
-					zeroyt7.sendMessage(m.chat, { text : teks2 })
-		            })              
-break		
 case 'searchgc':
 if (!q) return m.reply(`Example :\n${prefix}searchgc Editor Berkelas`)
 hx.linkwa(q).then(res => {
