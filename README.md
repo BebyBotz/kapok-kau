@@ -4,8 +4,7 @@
 </p>
 
 <p align="center">
-- PROFILE CREATOR KLIK DIBAWAH
-<a href="https://webasu-lea27yssy-aprilia3.vercel.app/" target="_blank">klik disini</a></p>
+- PROFILE CREATOR <a href="https://webasu-lea27yssy-aprilia3.vercel.app/" target="_blank">klik disini</a></p>
 </p>
 
 ------
