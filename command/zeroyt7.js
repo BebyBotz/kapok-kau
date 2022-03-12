@@ -695,7 +695,7 @@ case 'storywa':
 case 'storygalau':
 case 'storytruk':
 case 'storybus':
-reply(mess.wait)
+m.reply(mess.wait)
 apri = `https://apidhani.herokuapp.com/api/randomvideo/${command}?apikey=NisaaCantik`
 sendFileFromUrl(m.chat, `${apri}`,`Nieh By Aprilia\nJangan Lupa Subscribe Bot Indo`)
 break
