@@ -11,6 +11,7 @@
 "author": "Zero YT7",
 "license": "MIT",
 "dependencies": {
+"api-alphabot":"^1.0.2",
 "@adiwajshing/baileys-md": "github:adiwajshing/baileys#multi-device",
 "awesome-phonenumber": "^2.64.0",
 "axios": "^0.24.0",
